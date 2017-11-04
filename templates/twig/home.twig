@@ -1,0 +1,68 @@
+{% extends 'layout.twig' %}
+
+{% block csscontent %}
+<link rel="stylesheet" href="{{ base_url() }}/css/form.css">
+<link rel="stylesheet" href="{{ base_url() }}/css/tabs.css">
+{% endblock %}
+
+{% block jscontent %}
+<script src="{{ base_url() }}/js/jq-3.2.1.js"></script>
+<script src="{{ base_url() }}/js/validator.js"></script>
+<script src="{{ base_url() }}/js/profile.js"></script>
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="pc-tab">
+                <input checked="checked" id="tab1" type="radio" name="pct" />
+                <input id="tab2" type="radio" name="pct" />
+                <input id="tab3" type="radio" name="pct" />
+                  <nav>
+                    <ul>
+                      <li class="tab1"><label for="tab1">更改密码</label></li>
+                      <li class="tab2"><label for="tab2">备用</label></li>
+                      <li class="tab3"><label for="tab3">退出</label></li>
+                    </ul>
+                  </nav>
+                  <section>
+                    <div class="tab1">
+                        <form class="pure-form pure-form-stacked" id="profile" autocomplete="off">
+                                <input type="hidden" id="uid" value="">
+                           <fieldset>
+                                <label for="upwd">原密码</label>
+                                <input id="upwd" type="password" class="pure-input-1"  placeholder="原密码" autocomplete="off">
+                                <label for="upwdn">新密码</label>
+                                <input id="upwdn" type="password" class="pure-input-1"  placeholder="原密码" autocomplete="off">
+                                <span class="pure-form-message">密码应至少有6位, 如不更改,请留空.</span>
+                            </fieldset>
+                             <fieldset>
+                                <p id="form-alert"></p>
+                                {% if csrfToken %}
+                                      {% for k,v in csrfToken %}
+                                      <input type="hidden" id="{{k}}"  name="{{k}}" value="{{ v }}">
+                                      {% endfor %}
+                               {% endif %}
+                                  <button type="submit" id="submit" class="pure-button pure-button-primary">更改</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="tab2">
+                      <h2>备用</h2>
+                     {% if current_user %}
+                      {% for k,v in current_user %}
+                         <p>{{ k }}=> {{ v }}</p>
+                      {% endfor %}
+                     {% endif %}
+                    </div>
+                    <div class="tab3">
+                            {% if current_user %}
+                            <p><a class="pure-button  pure-button-primary" href="#">点击这里退出</a></p>
+                            {% else %}
+                                <p><a class="pure-button  pure-button-primary"  href="#">点击这里登录</a></p>
+                        {% endif %}
+                    </div>
+
+                  </section>
+                </div><!--//tabs-->
+{% endblock %}

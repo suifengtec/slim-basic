@@ -1,0 +1,111 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-05 02:37:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-05 02:41:05
+*/
+html, body {
+    background-color: #efefef;
+    font-size: 16px;
+    font-size: 1em;
+    font-size: 100%;
+    color: #777;
+}
+
+code, kbd, pre, samp, html, body, .pure-g [class *="pure-u"] {
+    font-family: -apple-system, "Microsoft Yahei New", "Microsoft Yahei", "PingFang SC", Helvetica, "Ubuntu", "Cantarell", "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Hiragino Sans GB", PMingLiU, "Microsoft JhengHei", "STXihei", "STHeiti Light", sans-serif;
+}
+
+code, kbd, pre, samp {
+    padding: 3px 6px;
+    background-color: #272822;
+    color: #fff;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 2
+}
+
+#site-nav {
+    margin-bottom: 1em;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: #E5E5E5;
+    border: 0;
+    height: 1px;
+    margin: 2.5em 0;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0em 1em;
+    background-color: white;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pure-menu {
+    text-align: left;
+    padding: 0.5em 0;
+}
+
+figure {
+    padding: 0.2em;
+}
+
+figcaption {
+    font-size: 0.8em;
+    display: block;
+    padding: 0.5em 0;
+}
+
+aside {
+    background: #0078e7;
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+}
+
+address a {
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 1em 0;
+}
+
+.pure-g:not(#site-nav) {
+    margin: 32px auto;
+    padding: 32px;
+    box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #CCC;
+    text-align: center;
+}
+
+footer a {
+    color: #AAA;
+    text-decoration: none;
+}

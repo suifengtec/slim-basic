@@ -1,0 +1,57 @@
+<div id="site-nav" class="pure-g">
+    <div class="pure-u-1">
+        <div class="pure-menu pure-menu-horizontal">
+            <h1 class="pure-menu-heading pure-menu-link">{{ gm.appName }}</h1>
+            <nav id="primary-nav">
+            <ul>
+                <li data-slug="home">
+                    <a href="{{ path_for('home') }}" class="pure-menu-link">首页</a>
+                </li>
+
+
+             {#
+
+                      {% if gm.is_user_logged_in!=1 %}
+                   <li >
+                        <a href="javascript:void(0);" class="pure-menu-link">登录/注册</a>
+                       <ul>
+                            <li data-slug="signin"><a href="{{path_for('signin')}}">登录</a></li>
+                            <li data-slug="signup"><a href="{{path_for('signup')}}">注册</a></li>
+                       </ul>
+                   </li>
+                 {% else %}
+                             <li data-slug="dashboard"><a href="{{path_for('dashboard')}}" class="pure-menu-link">控制面板</a></li>
+                   {% endif %}
+
+
+                    <li >
+                        <a href="javascript:void(0);" class="pure-menu-link">测试</a>
+                       <ul>
+                        <li data-slug="session"><a href="{{ path_for('session') }}">Session测试</a></li>
+                                <li data-slug="form"><a href="{{ path_for('form') }}" >上传测试</a></li>
+                                <li data-slug="form2"><a href="{{ path_for('form2') }}" >上传测试2</a></li>
+                       </ul>
+                   </li>
+                <li >
+                    <a href="javascript:void(0);" class="pure-menu-link">测试</a>
+                        <ul>
+                            <li data-slug="session"><a href="{{ path_for('session') }}">Session测试</a></li>
+                                <li data-slug="form"><a href="{{ path_for('form') }}" >上传测试</a></li>
+                                <li data-slug="form2"><a href="{{ path_for('form2') }}" >上传测试2</a></li>
+
+                        </ul>
+                </li>
+                   <li >
+                        <a href="javascript:void(0);" class="pure-menu-link">用户</a>
+                       <ul>
+                            <li data-slug="dashboard"><a href="{{path_for('dashboard')}}">控制面板</a></li>
+                            <li data-slug="signin"><a href="{{path_for('signin')}}">登录</a></li>
+                            <li data-slug="signup"><a href="{{path_for('signup')}}">注册</a></li>
+                       </ul>
+                   </li>
+             #}
+            </ul>
+            </nav>
+        </div>
+    </div>
+</div>
