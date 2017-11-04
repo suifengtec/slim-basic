@@ -2,6 +2,7 @@
 ## 这是？
 
 基于 PHP 开发框架 Slim 的一个基础项目的一部分基础,卧槽... 说的有点儿麻烦。
+![Slim 3](https://raw.githubusercontent.com/suifengtec/slim-basic/master/screenshot/1.png)
 
 ## 前端
 基于 PureCSS.
